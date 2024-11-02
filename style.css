@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* untuk deskripsi keterangan */
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+/* untuk di a */
+a{
+    text-decoration: none;
+}
+
+/* design bagian main container yaitu bagian utama page */
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* mendesign header bagian atas (navbar dan logo) */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    background: #B7E0FF;
+    box-shadow: 0px 6px 0px grey;
+    border-radius:  0 0 5px 5px;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -webkit-border-radius:  0 0 5px 5px;
+    -moz-border-radius:  0 0 5px 5px;
+    -ms-border-radius:  0 0 5px 5px;
+    -o-border-radius:  0 0 5px 5px;
+}
+/* design bagian menu ul dan li */
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    gap: 3rem;
+    padding-right: 1rem;
+}
+.nav ul li a{
+    color: #000;
+}
+
+.nav ul li a:hover{
+    color: #E78F81;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.logo a {
+    color: black;
+}
+/* masuk bagian utama */
+/* bikin button di design */
+.button {
+    padding: 1rem 1.5rem;
+    background: #FFCFB3;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  1px 2px 3px #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* bikin bagian yang helo guys */
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: gray;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1 rem;
+}
+
+.pre-title-2 {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: gray;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1 rem;
+}
+
+
+/* tambahan konten sebelum ada tulisan helo guys*/
+.pre-title::before{
+    text-transform: uppercase;
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* home section */
+#home {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.nama {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0.1rem;
+    color: #000;
+}
+
+.home-right img {
+    width: 300px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    margin-bottom: 20%;
+}
+
+/* design img*/
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+    gap: 3rem;
+}
+
+/* about selection */
+
+.about-main-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#about {
+    background: #B7E0FF;
+    padding: 2rem;
+    padding-left: 5 rem;
+    justify-content: space-between;
+}
+
+.about {
+    padding: 3rem 2rem;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 6px 2px black;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+}
+
+.section-title-about{
+    text-align: center;
+    margin: 1rem;
+    font-size: 25px;
+}
+
+.about-icon {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+ /* layout bagian isi */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+
+}
+#about {
+    padding: 6rem 0;
+}
+.hard-skill {
+    text-align: center;
+    font-size: 25px;
+}
+.soft-skill {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.about ul li a {
+    gap:5rem;
+    list-style: none;
+    color: #000;
+}
+
+/* End of About */
+
+/* skills and experience */
+#skills {
+    padding: 6rem;
+    background: white;
+}
+
+.section-title-skills {
+    text-align: center;
+    margin: 2rem;
+    font-size: 25px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+    gap: 3rem;
+}
+.experience {
+    display: flex;
+    gap: 2rem;
+}
+
+.experience line {
+    padding: 0 0.7rem;
+}
+
+.experience .line div{
+    width: 2px;
+    height: 100%;
+    background: #E78F81;
+    position: relative;
+}
+
+.experience-info {
+    margin: 0.3rem 0;
+}
+
+.experience-date {
+    margin-bottom: 3rem;
+}
+
+.experience .line div::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #E78F81;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+}
+
+
+.skills-right {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+/* end of skills& experience */
+
+/* Contact */
+#contact {
+    padding: 6rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", "sans-serif";
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+.btn_submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #E78F81;
+    color: black;
+    font-weight: 4rem;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+.btn_submit:hover {
+    background-color: rgb(209, 209, 207);
+    color: black;
+}
+/* End Of Contact */
+
+/* Footer */
+footer {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: #B7E0FF;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a{
+    margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+    fill: black;
+}
+.footer-icons {
+    fill: gray;
+}
